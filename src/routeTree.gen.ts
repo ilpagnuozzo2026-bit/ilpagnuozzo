@@ -10,33 +10,102 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AChiEDedicatoRouteImport } from './routes/a-chi-e-dedicato'
+import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
+import { Route as PercheIlPagnuozzoRouteImport } from './routes/perche-il-pagnuozzo'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as TerminiECondizioniRouteImport } from './routes/termini-e-condizioni'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AChiEDedicatoRoute = AChiEDedicatoRouteImport.update({
+  id: '/a-chi-e-dedicato',
+  path: '/a-chi-e-dedicato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CookiePolicyRoute = CookiePolicyRouteImport.update({
+  id: '/cookie-policy',
+  path: '/cookie-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PercheIlPagnuozzoRoute = PercheIlPagnuozzoRouteImport.update({
+  id: '/perche-il-pagnuozzo',
+  path: '/perche-il-pagnuozzo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TerminiECondizioniRoute = TerminiECondizioniRouteImport.update({
+  id: '/termini-e-condizioni',
+  path: '/termini-e-condizioni',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/a-chi-e-dedicato': typeof AChiEDedicatoRoute
+  '/cookie-policy': typeof CookiePolicyRoute
+  '/perche-il-pagnuozzo': typeof PercheIlPagnuozzoRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/termini-e-condizioni': typeof TerminiECondizioniRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/a-chi-e-dedicato': typeof AChiEDedicatoRoute
+  '/cookie-policy': typeof CookiePolicyRoute
+  '/perche-il-pagnuozzo': typeof PercheIlPagnuozzoRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/termini-e-condizioni': typeof TerminiECondizioniRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/a-chi-e-dedicato': typeof AChiEDedicatoRoute
+  '/cookie-policy': typeof CookiePolicyRoute
+  '/perche-il-pagnuozzo': typeof PercheIlPagnuozzoRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/termini-e-condizioni': typeof TerminiECondizioniRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/a-chi-e-dedicato'
+    | '/cookie-policy'
+    | '/perche-il-pagnuozzo'
+    | '/privacy-policy'
+    | '/termini-e-condizioni'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/a-chi-e-dedicato'
+    | '/cookie-policy'
+    | '/perche-il-pagnuozzo'
+    | '/privacy-policy'
+    | '/termini-e-condizioni'
+  id:
+    | '__root__'
+    | '/'
+    | '/a-chi-e-dedicato'
+    | '/cookie-policy'
+    | '/perche-il-pagnuozzo'
+    | '/privacy-policy'
+    | '/termini-e-condizioni'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AChiEDedicatoRoute: typeof AChiEDedicatoRoute
+  CookiePolicyRoute: typeof CookiePolicyRoute
+  PercheIlPagnuozzoRoute: typeof PercheIlPagnuozzoRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  TerminiECondizioniRoute: typeof TerminiECondizioniRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +117,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/a-chi-e-dedicato': {
+      id: '/a-chi-e-dedicato'
+      path: '/a-chi-e-dedicato'
+      fullPath: '/a-chi-e-dedicato'
+      preLoaderRoute: typeof AChiEDedicatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cookie-policy': {
+      id: '/cookie-policy'
+      path: '/cookie-policy'
+      fullPath: '/cookie-policy'
+      preLoaderRoute: typeof CookiePolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/perche-il-pagnuozzo': {
+      id: '/perche-il-pagnuozzo'
+      path: '/perche-il-pagnuozzo'
+      fullPath: '/perche-il-pagnuozzo'
+      preLoaderRoute: typeof PercheIlPagnuozzoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/termini-e-condizioni': {
+      id: '/termini-e-condizioni'
+      path: '/termini-e-condizioni'
+      fullPath: '/termini-e-condizioni'
+      preLoaderRoute: typeof TerminiECondizioniRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AChiEDedicatoRoute: AChiEDedicatoRoute,
+  CookiePolicyRoute: CookiePolicyRoute,
+  PercheIlPagnuozzoRoute: PercheIlPagnuozzoRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
+  TerminiECondizioniRoute: TerminiECondizioniRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
