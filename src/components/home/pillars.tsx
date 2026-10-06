@@ -44,7 +44,7 @@ export function Pillars() {
             className="overflow-hidden rounded-2xl bg-card shadow-lg shadow-espresso/5 ring-1 ring-border/60"
           >
             <div className="relative aspect-[5/3]">
-              <Image src={p.img} alt={p.alt} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" />
+              <Image src={p.img} alt={p.alt} fill sizes="(min-width: 768px) 33vw, 100vw" className="bg-card object-contain" />
               <span className="absolute left-0 top-0 rounded-br-xl bg-surface-a3842f/90 px-4 py-2 font-serif text-2xl font-bold text-cream">
                 {p.n}
               </span>
