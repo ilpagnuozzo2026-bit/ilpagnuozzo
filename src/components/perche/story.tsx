@@ -19,13 +19,12 @@ export function StorySection() {
         className="mx-auto grid max-w-6xl items-start gap-10 px-5 pb-20 pt-4 md:grid-cols-[2fr_3fr]"
         aria-labelledby="storia-title"
       >
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-lg ring-1 ring-espresso/10">
+        <div>
           <Image
             src="/images/maestro-amelio.png"
             alt="Il Maestro Amelio Anchebene Palomba mentre impasta nel suo forno"
-            fill
             sizes="(min-width: 768px) 40vw, 100vw"
-            className="object-cover"
+            className="w-full h-auto rounded-xl shadow-md"
           />
         </div>
         <div className="space-y-5 text-sm leading-relaxed text-muted-foreground md:pt-2">
