@@ -24,34 +24,35 @@ export function Navbar() {
         aria-label="Navigazione principale"
         className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-4"
       >
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <LogoBadge className="h-14 w-14 self-center" />
+        <div className="flex items-center gap-8 lg:gap-12">
+          <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+            <LogoBadge className="h-16 w-16 self-center" />
+          </Link>
 
-        </Link>
-
-        <ul className="hidden items-center gap-8 whitespace-nowrap lg:flex">
-          {NAV_LINKS.map((link) => {
-            const active = pathname === link.href
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  aria-current={active ? 'page' : undefined}
-                  className={cn(
-                    'text-[15px] font-bold transition-colors hover:text-brand',
-                    active ? 'text-brand' : 'text-espresso',
-                  )}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            )
-          })}
-        </ul>
+          <ul className="hidden items-center gap-8 whitespace-nowrap lg:flex">
+            {NAV_LINKS.map((link) => {
+              const active = pathname === link.href
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    aria-current={active ? 'page' : undefined}
+                    className={cn(
+                      'text-base font-semibold transition-colors duration-200 hover:text-brand',
+                      active ? 'text-brand' : 'text-espresso',
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
 
         <Link
           href="/a-chi-e-dedicato#form"
-          className="hidden whitespace-nowrap rounded-full border-2 border-brand px-6 py-2.5 text-[15px] font-bold text-brand transition-colors hover:bg-brand hover:text-primary-foreground lg:inline-flex"
+          className="ml-auto hidden whitespace-nowrap rounded-full border-2 border-brand px-6 py-2.5 text-[15px] font-bold text-brand transition-colors hover:bg-brand hover:text-primary-foreground lg:inline-flex"
         >
           {'→ Richiedi il campione'}
         </Link>
