@@ -25,10 +25,8 @@ export function Navbar() {
         className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-4"
       >
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <LogoBadge className="size-14 text-[18px]" />
-          <span className="font-serif text-lg font-semibold tracking-wide text-espresso">
-            IL PAGNUOZZO
-          </span>
+          <LogoBadge className="h-14 w-14 self-center" />
+
         </Link>
 
         <ul className="hidden items-center gap-8 whitespace-nowrap lg:flex">
