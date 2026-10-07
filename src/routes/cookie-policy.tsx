@@ -7,7 +7,7 @@ function CookiePolicyPage() {
   return (
     <LegalPage
       title="Cookie Policy"
-      updated="6 ottobre 2026"
+      updated="7 ottobre 2026"
       intro="Questa pagina spiega cosa sono i cookie e come vengono utilizzati sul sito www.ilpagnuozzo.com."
       sections={[
         {

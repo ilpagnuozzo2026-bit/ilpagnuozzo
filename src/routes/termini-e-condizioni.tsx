@@ -7,7 +7,7 @@ function TerminiPage() {
   return (
     <LegalPage
       title="Termini e condizioni"
-      updated="6 ottobre 2026"
+      updated="7 ottobre 2026"
       intro="L’utilizzo del sito www.ilpagnuozzo.com comporta l’accettazione dei presenti termini e condizioni."
       sections={[
         {

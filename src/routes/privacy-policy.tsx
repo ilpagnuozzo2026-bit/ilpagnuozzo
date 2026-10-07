@@ -7,7 +7,7 @@ function PrivacyPolicyPage() {
   return (
     <LegalPage
       title="Privacy Policy"
-      updated="6 ottobre 2026"
+      updated="7 ottobre 2026"
       intro="Ai sensi del Regolamento (UE) 2016/679 (GDPR), questa informativa descrive come trattiamo i dati personali raccolti tramite il sito www.ilpagnuozzo.com, in particolare attraverso il modulo di richiesta del campione gratuito."
       sections={[
         {
