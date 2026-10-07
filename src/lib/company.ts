@@ -5,7 +5,7 @@ export const company = {
     'https://maps.google.com/?q=Via+Giulio+Cesare+55,+Somma+Vesuviana,+Napoli,+80049,+Italia',
   vat: '02936711213',
   phoneDisplay: '+39 370 164 4530',
-  phoneHref: 'tel:+393701644530',
+  phoneHref: 'https://wa.me/393701644530',
   email: 'info@ilpagnuozzo.com',
   emailHref: 'mailto:info@ilpagnuozzo.com',
   websiteDisplay: 'www.ilpagnuozzo.com',
