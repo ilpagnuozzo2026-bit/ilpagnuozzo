@@ -36,7 +36,7 @@ function PrivacyPolicyPage() {
         {
           title: '4. Video testimonianze',
           paragraphs: [
-            'Il sito può contenere video testimonianze in cui compaiono clienti o professionali del settore che hanno scelto volontariamente di partecipare. Per finalità di comunicazione e promozione dei prodotti Il Pagnuozzo, il Titolare può trattare e pubblicare immagine, voce, nome (ove applicabile), dichiarazioni e materiale audiovisivo delle persone ritratte.',
+            'Il sito può contenere video testimonianze in cui compaiono clienti o professionisti del settore che hanno scelto volontariamente di partecipare. Per finalità di comunicazione e promozione dei prodotti Il Pagnuozzo, il Titolare può trattare e pubblicare immagine, voce, nome (ove applicabile), dichiarazioni e materiale audiovisivo delle persone ritratte.',
             'Tale trattamento avviene esclusivamente sulla base di una specifica autorizzazione scritta (liberatoria per l’uso di immagine, voce e testimonianza) rilasciata separatamente da ciascuna persona identificabile, conservata dal Titolare e non pubblicata sul sito. La consultazione del sito o l’accettazione della presente informativa non costituiscono in alcun caso autorizzazione all’uso dell’immagine o della testimonianza di alcuno.',
             'La persona ritratta può esercitare i diritti previsti dal GDPR, inclusa la revoca del consenso per il futuro, contattando il Titolare; la revoca non pregiudica la liceità del trattamento effettuato prima della stessa.',
           ],
