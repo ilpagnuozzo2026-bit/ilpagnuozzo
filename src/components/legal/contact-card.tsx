@@ -22,7 +22,7 @@ export function ContactCard() {
     },
     { label: 'P.IVA', value: company.vat },
     {
-      label: 'Telefono / WhatsApp',
+      label: 'WhatsApp',
       value: (
         <a
           href={company.phoneHref}
