@@ -1,5 +1,5 @@
 import Link from '@/components/site/link'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin, MessageCircle } from 'lucide-react'
 import { company, legalLinks } from '@/lib/company'
 import { LogoBadge } from './logo'
 import {
@@ -97,12 +97,12 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className={contactLinkClass}
               >
-                <Phone className={iconClass} aria-hidden="true" />
+                <MessageCircle className={iconClass} aria-hidden="true" />
                 <span>
                   <span className="block text-xs font-semibold uppercase tracking-wide text-brand">
                     WhatsApp
                   </span>
-                  {company.phoneDisplay}
+                  Apri la chat
                   <span className="sr-only"> (si apre in una nuova scheda)</span>
                 </span>
               </a>
