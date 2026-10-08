@@ -24,8 +24,14 @@ export function ContactCard() {
     {
       label: 'Telefono / WhatsApp',
       value: (
-        <a href={company.phoneHref} className={linkClass}>
+        <a
+          href={company.phoneHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={linkClass}
+        >
           {company.phoneDisplay}
+          <span className="sr-only"> (si apre in una nuova scheda)</span>
         </a>
       ),
     },

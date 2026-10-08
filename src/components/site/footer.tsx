@@ -91,18 +91,31 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href={company.phoneHref} className={contactLinkClass}>
+              <a
+                href={company.phoneHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={contactLinkClass}
+              >
                 <Phone className={iconClass} aria-hidden="true" />
                 <span>
-                  <span className="sr-only">Telefono / WhatsApp: </span>
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-brand">
+                    Telefono / WhatsApp
+                  </span>
                   {company.phoneDisplay}
+                  <span className="sr-only"> (si apre in una nuova scheda)</span>
                 </span>
               </a>
             </li>
             <li>
               <a href={company.emailHref} className={contactLinkClass}>
                 <Mail className={iconClass} aria-hidden="true" />
-                <span className="break-all">{company.email}</span>
+                <span>
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-brand">
+                    Email
+                  </span>
+                  <span className="break-all">{company.email}</span>
+                </span>
               </a>
             </li>
           </ul>
