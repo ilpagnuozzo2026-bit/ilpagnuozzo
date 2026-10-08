@@ -102,7 +102,7 @@ export function Footer() {
                   <span className="block text-xs font-semibold uppercase tracking-wide text-brand">
                     WhatsApp
                   </span>
-                  Apri la chat
+                  {company.phoneDisplay}
                   <span className="sr-only"> (si apre in una nuova scheda)</span>
                 </span>
               </a>
