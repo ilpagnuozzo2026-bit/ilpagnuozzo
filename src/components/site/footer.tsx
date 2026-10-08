@@ -100,7 +100,7 @@ export function Footer() {
                 <Phone className={iconClass} aria-hidden="true" />
                 <span>
                   <span className="block text-xs font-semibold uppercase tracking-wide text-brand">
-                    Telefono / WhatsApp
+                    WhatsApp
                   </span>
                   {company.phoneDisplay}
                   <span className="sr-only"> (si apre in una nuova scheda)</span>
