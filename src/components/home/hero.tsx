@@ -10,7 +10,7 @@ const bullets = [
 
 const stats = [
   { value: '500+', label: 'locali in tutta Italia hanno scelto' },
-  { value: '70 anni', label: 'di tradizione nostra' },
+  { value: '100%', label: 'lavorazione artigianale' },
   { value: '0', label: 'conservanti artificiali' },
 ]
 

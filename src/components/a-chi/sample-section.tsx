@@ -2,7 +2,7 @@ import { CircleCheck } from 'lucide-react'
 import { SampleForm } from './sample-form'
 
 const benefits: { title: string; text?: string }[] = [
-  { title: 'Lievito madre rinnovato da 70 anni' },
+  { title: 'Lievito madre curato secondo la tradizione artigianale' },
   { title: 'Zero conservanti artificiali', text: 'Come il pane di una volta.' },
   { title: 'Pronto in 3 step', text: 'Riscaldare, farcire, servire.' },
 ]
