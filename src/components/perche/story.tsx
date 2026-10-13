@@ -6,7 +6,7 @@ export function StorySection() {
       <section className="mx-auto max-w-6xl px-5 py-12">
         <div className="border-y border-surface-e3d5c3 py-14 text-center">
           <h2 className="mx-auto max-w-xl text-balance font-serif text-2xl italic text-espresso md:text-3xl">
-            70 anni fa il Maestro Amelio custodiva un segreto che ha donato a noi.
+            Il Maestro Amelio custodiva un segreto che ha donato a noi.
           </h2>
           <p className="mx-auto mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
             Amelio Anchebene Palomba custodiva un lievito madre, curato e rinnovato ogni giorno
