@@ -1,8 +1,8 @@
 import { CircleCheck } from 'lucide-react'
 import { SampleForm } from './sample-form'
 
-const benefits = [
-  { title: 'Lievito madre rinnovato da 70 anni', text: 'Unico in Italia.' },
+const benefits: { title: string; text?: string }[] = [
+  { title: 'Lievito madre rinnovato da 70 anni' },
   { title: 'Zero conservanti artificiali', text: 'Come il pane di una volta.' },
   { title: 'Pronto in 3 step', text: 'Riscaldare, farcire, servire.' },
 ]
