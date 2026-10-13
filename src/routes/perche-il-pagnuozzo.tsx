@@ -18,7 +18,7 @@ function PerchePage() {
 const pageMeta = {
   title: 'Perché Il Pagnuozzo',
   description:
-    'Lievito madre rinnovato da 70 anni e 48 ore di lievitazione naturale: scopri perché la differenza si sente al primo morso.',
+    'Lievito madre curato secondo la tradizione artigianale napoletana e 48 ore di lievitazione naturale: scopri perché la differenza si sente al primo morso.',
 }
 export const Route = createFileRoute('/perche-il-pagnuozzo')({
   component: PerchePage,
