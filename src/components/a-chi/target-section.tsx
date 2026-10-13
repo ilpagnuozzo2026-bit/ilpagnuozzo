@@ -17,7 +17,7 @@ const targets = [
   {
     Icon: Utensils,
     title: 'Ristoranti',
-    text: "Un'ottima soluzione da servire così com'è o come proposta rapida di qualità premium.",
+    text: 'Un’ottima soluzione da riscaldare e servire.',
   },
   {
     Icon: Truck,

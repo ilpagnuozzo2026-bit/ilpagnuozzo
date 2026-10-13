@@ -20,7 +20,7 @@ const pillars = [
     img: '/images/pillar-artigianale.png',
     alt: 'Panuozzi lievitati davanti al forno a legna',
     title: 'Ciò che le Industrie NON Possono Fare',
-    text: 'Zero conservanti, lavorazione artigianale e cottura a legna. Un risultato che nessuna produzione industriale può replicare.',
+    text: 'Zero conservanti, lavorazione artigianale e pronto da riscaldare. Un risultato che nessuna produzione industriale può replicare.',
   },
 ]
 
