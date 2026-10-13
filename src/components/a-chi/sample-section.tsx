@@ -1,8 +1,8 @@
 import { CircleCheck } from 'lucide-react'
 import { SampleForm } from './sample-form'
 
-const benefits = [
-  { title: 'Lievito madre rinnovato da 70 anni', text: 'Unico in Italia.' },
+const benefits: { title: string; text?: string }[] = [
+  { title: 'Lievito madre rinnovato da 70 anni' },
   { title: 'Zero conservanti artificiali', text: 'Come il pane di una volta.' },
   { title: 'Pronto in 3 step', text: 'Riscaldare, farcire, servire.' },
 ]
@@ -35,7 +35,9 @@ export function SampleSection() {
                 <CircleCheck className="mt-1 size-6 shrink-0 text-surface-b07a2a" aria-hidden="true" />
                 <div>
                   <p className="font-serif text-lg font-bold text-espresso">{b.title}</p>
-                  <p className="text-sm text-muted-foreground">{b.text}</p>
+                  {b.text ? (
+                    <p className="text-sm text-muted-foreground">{b.text}</p>
+                  ) : null}
                 </div>
               </li>
             ))}

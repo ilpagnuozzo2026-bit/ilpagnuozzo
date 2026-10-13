@@ -12,7 +12,9 @@ export function PercheHero() {
         <h1 className="mt-5 text-balance font-serif text-5xl font-bold leading-[1.05] text-espresso md:text-6xl">
           La differenza si sente al primo morso
         </h1>
-        <p className="mt-5 text-muted-foreground">Lievito madre rinnovato da 70 anni.</p>
+        <p className="mt-5 text-muted-foreground">
+          Lievito madre, curato e rinnovato secondo la tradizione artigianale napoletana.
+        </p>
         <Link
           href="/a-chi-e-dedicato#form"
           className="mt-8 inline-flex rounded-lg bg-brand px-6 py-3.5 text-sm font-bold text-primary-foreground shadow-lg shadow-brand/30 transition-colors hover:bg-brand-dark"

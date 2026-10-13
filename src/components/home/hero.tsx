@@ -5,7 +5,7 @@ import { Check } from 'lucide-react'
 const bullets = [
   '48h di lievitazione naturale con lievito madre',
   'Zero conservanti e artificiali',
-  'Prodotto originario pronto da forno',
+  'Panuozzo Napoletano autentico, pronto da riscaldare',
 ]
 
 const stats = [

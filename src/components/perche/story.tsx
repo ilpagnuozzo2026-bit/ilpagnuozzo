@@ -9,8 +9,8 @@ export function StorySection() {
             70 anni fa il Maestro Amelio custodiva un segreto che ha donato a noi.
           </h2>
           <p className="mx-auto mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Amelio Anchebene Palomba custodiva il lievito madre più antico di Napoli. Rinnovato ogni
-            giorno.
+            Amelio Anchebene Palomba custodiva un lievito madre, curato e rinnovato ogni giorno
+            secondo la tradizione napoletana.
           </p>
         </div>
       </section>
@@ -40,10 +40,10 @@ export function StorySection() {
           </p>
           <p>
             Un giorno ho incontrato <strong className="text-espresso">Amelio Anchebene Palomba</strong>,
-            che era il più grande esperto di lievito madre in Italia. Con lui non ho trovato solo una
-            ricetta: ho trovato un maestro. E da quel legame — fatto di amicizia, impegno e
-            tradizione — è nato il nostro Pagnuozzo con lievito madre, lo stesso lievito che Amelio
-            custodiva gelosamente da oltre settant&apos;anni. Il Maestro oggi non è più con noi.
+            con una profonda esperienza nella lavorazione del lievito madre. Con lui non ho trovato
+            solo una ricetta: ho trovato un maestro. E da quel legame — fatto di amicizia, impegno e
+            tradizione — è nato il nostro Pagnuozzo, con un lievito madre custodito e tramandato
+            secondo la tradizione artigianale. Il Maestro oggi non è più con noi.
           </p>
           <p>
             {
