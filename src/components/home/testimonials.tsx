@@ -102,7 +102,7 @@ export function Testimonials() {
           {videos.map((v) => (
             <li key={v.subtitle} className="flex">
               <figure className="flex h-full w-full flex-col text-center">
-                <div className="flex flex-1 flex-col items-center justify-end pb-5">
+                <div className="flex min-h-[11rem] flex-col items-center justify-start pb-5">
                   <Quote className="size-6 shrink-0 text-gold md:size-7" aria-hidden="true" />
                   <blockquote className="mt-2 text-balance font-serif text-lg font-medium italic leading-snug text-espresso md:text-xl">
                     {v.quote}
