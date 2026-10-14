@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
-import { Check, Play } from 'lucide-react'
+import { Check, Play, Quote } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 import clip1 from '@/assets/video-partner-1.mp4.asset.json'
@@ -12,9 +12,25 @@ import poster2 from '@/assets/video-partner-2.jpg.asset.json'
 import poster3 from '@/assets/video-partner-3.jpg.asset.json'
 
 const videos = [
-  { src: clip1.url, poster: poster1.url, caption: 'Manager di Pub – Salerno' },
-  { src: clip2.url, poster: poster2.url, caption: 'Titolare di Paninoteca – Napoli' },
-  { src: clip3.url, poster: poster3.url, caption: 'Titolare di Rosticceria – Caserta' },
+  {
+    src: clip1.url,
+    poster: poster1.url,
+    subtitle: 'Personale di Distribuzione Alimentare – Portici, Napoli',
+    quote: '\u00ab\u00c8 fresco e senza conservanti!\u00bb',
+  },
+  {
+    src: clip2.url,
+    poster: poster2.url,
+    subtitle: 'Personale di Caseificio e Panificio – Pomigliano, Napoli',
+    quote:
+      '\u00abAbbiamo scelto l\u2019antica ricetta del Panuozzo Napoletano: un prodotto fresco, fatto con lievito madre e senza conservanti, per soddisfare tutti i nostri clienti.\u00bb',
+  },
+  {
+    src: clip3.url,
+    poster: poster3.url,
+    subtitle: 'Titolare di Paninoteca – Napoli',
+    quote: '\u00abIl numero uno di tutti i panuozzi!\u00bb',
+  },
 ]
 
 function VideoCard({ video }: { video: (typeof videos)[number] }) {
@@ -62,7 +78,7 @@ function VideoCard({ video }: { video: (typeof videos)[number] }) {
               <Play className="ml-1 size-7 fill-primary-foreground text-primary-foreground" aria-hidden="true" />
             </span>
           </span>
-          <span className="sr-only">Guarda la testimonianza: {video.caption}</span>
+          <span className="sr-only">Guarda la testimonianza: {video.subtitle}</span>
         </Button>
       )}
     </div>
@@ -77,16 +93,26 @@ export function Testimonials() {
           Cosa dicono i nostri partner del Panuozzo
         </h2>
         <p className="mt-3 italic text-primary-foreground/90">
-          {'I nostri clienti lo adorano: “Il pane che ha rivoluzionato il mio locale”'}
+          {'I nostri clienti lo adorano: \u201cIl pane che ha rivoluzionato il mio locale\u201d'}
         </p>
       </div>
 
       <div className="mx-auto max-w-6xl px-5 py-14">
-        <ul className="grid gap-6 md:grid-cols-3">
+        <ul className="grid items-stretch gap-6 md:grid-cols-3">
           {videos.map((v) => (
-            <li key={v.caption} className="text-center">
-              <VideoCard video={v} />
-              <p className="mt-3 text-sm text-espresso">{v.caption}</p>
+            <li key={v.subtitle} className="flex">
+              <figure className="flex h-full w-full flex-col text-center">
+                <div className="flex flex-1 flex-col items-center justify-start pb-5">
+                  <Quote className="size-6 shrink-0 text-gold md:size-7" aria-hidden="true" />
+                  <blockquote className="mt-2 text-balance font-serif text-lg font-medium italic leading-snug text-espresso md:text-xl">
+                    {v.quote}
+                  </blockquote>
+                </div>
+                <VideoCard video={v} />
+                <figcaption className="mt-3 flex min-h-10 items-start justify-center text-sm font-semibold text-espresso">
+                  {v.subtitle}
+                </figcaption>
+              </figure>
             </li>
           ))}
         </ul>
