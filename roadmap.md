@@ -4,5 +4,5 @@
 - [x] Verify all pages and logo sizing in the browser.
 
 # Home video section
-- [ ] Add three side-by-side vertical (9:16) video cards to the home landing page, first frame as poster.
-- [ ] Verify the section in the browser on desktop and mobile.
+- [x] Add three side-by-side vertical (9:16) video cards to the home landing page, first frame as poster.
+- [x] Verify the section in the browser on desktop and mobile.
