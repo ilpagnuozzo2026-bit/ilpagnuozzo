@@ -1,29 +1,75 @@
-import { Button } from '@/components/ui/button'
 'use client'
 
-import Image from '@/components/site/image'
-import { useEffect, useRef, useState } from 'react'
-import { Check, Play, X } from 'lucide-react'
+import { useRef, useState } from 'react'
+import { Check, Play } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+
+import clip1 from '@/assets/video-partner-1.mp4.asset.json'
+import clip2 from '@/assets/video-partner-2.mp4.asset.json'
+import clip3 from '@/assets/video-partner-3.mp4.asset.json'
+import poster1 from '@/assets/video-partner-1.jpg.asset.json'
+import poster2 from '@/assets/video-partner-2.jpg.asset.json'
+import poster3 from '@/assets/video-partner-3.jpg.asset.json'
 
 const videos = [
-  { img: '/images/video-pub.png', caption: 'Manager di Pub – Salerno' },
-  { img: '/images/video-paninoteca.png', caption: 'Titolare di Paninoteca – Napoli' },
-  { img: '/images/video-rosticceria.png', caption: 'Titolare di Rosticceria – Caserta' },
+  { src: clip1.url, poster: poster1.url, caption: 'Manager di Pub – Salerno' },
+  { src: clip2.url, poster: poster2.url, caption: 'Titolare di Paninoteca – Napoli' },
+  { src: clip3.url, poster: poster3.url, caption: 'Titolare di Rosticceria – Caserta' },
 ]
 
+function VideoCard({ video }: { video: (typeof videos)[number] }) {
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const [playing, setPlaying] = useState(false)
+
+  const start = () => {
+    const el = videoRef.current
+    if (!el) return
+    void el.play().then(
+      () => setPlaying(true),
+      () => setPlaying(false),
+    )
+  }
+
+  const stop = () => {
+    const el = videoRef.current
+    if (!el) return
+    el.load()
+    setPlaying(false)
+  }
+
+  return (
+    <div className="relative mx-auto aspect-[9/16] w-full max-w-xs overflow-hidden rounded-2xl shadow-lg md:max-w-none">
+      <video
+        ref={videoRef}
+        src={video.src}
+        poster={video.poster}
+        preload="none"
+        playsInline
+        controls={playing}
+        onEnded={stop}
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      {!playing && (
+        <Button
+          type="button"
+          variant="ghost"
+          onClick={start}
+          className="group absolute inset-0 h-auto w-full p-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+        >
+          <span className="absolute inset-0 bg-espresso/15 transition-colors group-hover:bg-espresso/25" />
+          <span className="absolute inset-0 flex items-center justify-center">
+            <span className="flex size-16 items-center justify-center rounded-full bg-espresso/55 ring-4 ring-primary-foreground/30 transition-transform group-hover:scale-110">
+              <Play className="ml-1 size-7 fill-primary-foreground text-primary-foreground" aria-hidden="true" />
+            </span>
+          </span>
+          <span className="sr-only">Guarda la testimonianza: {video.caption}</span>
+        </Button>
+      )}
+    </div>
+  )
+}
+
 export function Testimonials() {
-  const [active, setActive] = useState<number | null>(null)
-  const dialogRef = useRef<HTMLDialogElement>(null)
-
-  useEffect(() => {
-    const dialog = dialogRef.current
-    if (!dialog) return
-    if (active !== null && !dialog.open) dialog.showModal()
-    if (active === null && dialog.open) dialog.close()
-  }, [active])
-
-  const current = active !== null ? videos[active] : null
-
   return (
     <section aria-labelledby="testimonials-title">
       <div className="bg-gradient-to-r from-surface-b52d14 via-surface-c9461a to-surface-de6a17 px-5 py-12 text-center text-primary-foreground">
@@ -37,21 +83,9 @@ export function Testimonials() {
 
       <div className="mx-auto max-w-6xl px-5 py-14">
         <ul className="grid gap-6 md:grid-cols-3">
-          {videos.map((v, i) => (
+          {videos.map((v) => (
             <li key={v.caption} className="text-center">
-              <Button variant="ghost"
-                type="button"
-                onClick={() => setActive(i)}
-                className="group relative block h-auto p-0 aspect-[5/3] w-full overflow-hidden rounded-2xl shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
-              >
-                <Image src={v.img} alt="" fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
-                <span className="absolute inset-0 flex items-center justify-center bg-espresso/25">
-                  <span className="flex size-16 items-center justify-center rounded-full bg-espresso/60 ring-4 ring-primary-foreground/30 transition-transform group-hover:scale-110">
-                    <Play className="ml-1 size-7 fill-primary-foreground text-primary-foreground" aria-hidden="true" />
-                  </span>
-                </span>
-                <span className="sr-only">Guarda la testimonianza: {v.caption}</span>
-              </Button>
+              <VideoCard video={v} />
               <p className="mt-3 text-sm text-espresso">{v.caption}</p>
             </li>
           ))}
@@ -61,35 +95,6 @@ export function Testimonials() {
           {"Campione gratuito senza impegno d'acquisto"}
         </p>
       </div>
-
-      <dialog
-        ref={dialogRef}
-        onClose={() => setActive(null)}
-        onClick={(e) => e.target === e.currentTarget && setActive(null)}
-        className="m-auto w-[min(90vw,48rem)] overflow-hidden rounded-2xl bg-espresso p-0 text-primary-foreground backdrop:bg-espresso/70"
-        aria-label={current?.caption}
-      >
-        {current && (
-          <div>
-            <div className="relative aspect-video">
-              <Image src={current.img} alt="" fill sizes="768px" className="object-cover opacity-60" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-6 text-center">
-                <Play className="size-12 fill-primary-foreground text-primary-foreground" aria-hidden="true" />
-                <p className="font-serif text-2xl font-bold">{current.caption}</p>
-                <p className="text-sm text-primary-foreground/80">La video testimonianza sarà disponibile a breve.</p>
-              </div>
-            </div>
-            <Button variant="ghost"
-              type="button"
-              onClick={() => setActive(null)}
-              className="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-foreground/50 hover:bg-foreground/70"
-            >
-              <X className="size-5" aria-hidden="true" />
-              <span className="sr-only">Chiudi</span>
-            </Button>
-          </div>
-        )}
-      </dialog>
     </section>
   )
 }
