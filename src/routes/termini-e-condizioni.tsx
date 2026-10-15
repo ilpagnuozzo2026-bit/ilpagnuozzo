@@ -7,13 +7,13 @@ function TerminiPage() {
   return (
     <LegalPage
       title="Termini e condizioni"
-      updated="7 ottobre 2026"
-      intro="I presenti Termini e condizioni regolano l’utilizzo del sito www.ilpagnuozzo.com, gestito da Società Duegi S.r.l. (P.IVA 02936711213). L’utilizzo del sito comporta l’accettazione dei presenti termini."
+      updated="15 ottobre 2026"
+      intro="Questi Termini e condizioni disciplinano l’utilizzo del sito Il Pagnuozzo, anche sul dominio di pubblicazione ilpagnuozzo.lovable.app, gestito da Società Duegi S.r.l. (P.IVA 02936711213). Riguardano la consultazione dei contenuti e le richieste professionali; non sono condizioni di vendita online. La navigazione non costituisce consenso al marketing o all’uso dell’immagine."
       sections={[
         {
           title: '1. Oggetto del sito',
           paragraphs: [
-            'Il sito ha finalità informative e promozionali: presenta i prodotti a marchio Il Pagnuozzo e consente di richiedere un campione gratuito e di essere ricontattati. Il sito non consente l’acquisto online di prodotti.',
+            'Il sito presenta i prodotti a marchio Il Pagnuozzo e consente di avviare una richiesta di campione gratuito o un contatto per informazioni su forniture e collaborazioni B2B. Non contiene un carrello, un pagamento online né un modulo per concludere ordini: eventuali richieste commerciali tramite WhatsApp o email sono valutate separatamente.',
           ],
         },
         {
@@ -26,8 +26,10 @@ function TerminiPage() {
           title: '3. Richiesta del campione gratuito',
           paragraphs: [
             'La richiesta del campione è gratuita e senza impegno. Il campione è destinato esclusivamente a operatori professionali.',
+            'Il modulo richiede nome e cognome, locale o azienda, numero WhatsApp e selezione della casella per il ricontatto; il messaggio è facoltativo. Apre WhatsApp con un testo precompilato: la richiesta raggiunge il Titolare soltanto dopo che l’utente invia il messaggio nell’applicazione. L’avviso del sito invita a completare l’invio e non è una conferma di ricezione, accettazione o spedizione.',
             'Ogni richiesta è soggetta a verifica da parte di Società Duegi S.r.l., che si riserva di valutare la corrispondenza del richiedente ai destinatari del servizio e di non dare seguito a richieste incomplete, non verificabili o non coerenti con tali finalità.',
             'La disponibilità dei campioni è limitata e può variare in base alle scorte, alla zona di consegna e alle esigenze organizzative.',
+            'L’eventuale indirizzo di consegna e i dettagli organizzativi vengono richiesti successivamente attraverso il canale di contatto. Tempi e modalità di consegna devono essere confermati dal Titolare; l’indicazione di un tempo di risposta sul sito non equivale a una garanzia di consegna del campione.',
             'La richiesta del campione non costituisce un ordine e non determina la conclusione di alcun contratto di acquisto. Eventuali forniture successive saranno regolate da specifici accordi commerciali tra le parti.',
           ],
         },
@@ -36,6 +38,7 @@ function TerminiPage() {
           paragraphs: [
             'Le descrizioni, le immagini e le informazioni sui prodotti hanno carattere illustrativo e possono differire lievemente dal prodotto reale. Le informazioni ufficiali su ingredienti, allergeni e conservazione sono quelle riportate in etichetta.',
             'La disponibilità dei prodotti, i formati e le condizioni commerciali possono variare senza preavviso.',
+            'Prima di qualsiasi fornitura successiva, le parti devono definire separatamente prodotti e quantità, prezzi e trattamento IVA, eventuali costi di trasporto, modalità di pagamento e consegna e condizioni applicabili al rapporto B2B. Il professionista deve rispettare le indicazioni di etichetta e la normativa alimentare applicabile alla conservazione, preparazione e somministrazione. Questi termini del sito non sostituiscono gli accordi di fornitura e non limitano gli obblighi inderogabili in materia di sicurezza alimentare.',
           ],
         },
         {
@@ -59,7 +62,7 @@ function TerminiPage() {
         {
           title: '8. Video testimonianze',
           paragraphs: [
-            'Le video testimonianze pubblicate sul sito raccolgono le esperienze di clienti e professionisti che hanno partecipato volontariamente, previa specifica autorizzazione scritta. Le opinioni espresse sono personali e riferite alla propria esperienza. È vietato scaricare, riprodurre o riutilizzare i video senza autorizzazione.',
+            'Le testimonianze dei partner B2B e le relative citazioni riportano opinioni personali riferite alla loro esperienza e non costituiscono una garanzia di risultati né una certificazione o una classifica oggettiva dei prodotti. La pubblicazione di persone identificabili richiede una specifica autorizzazione documentabile per immagine, voce e testimonianza, distinta dalle richieste di campioni e da eventuali consensi al marketing. È vietato riprodurre o riutilizzare i video senza autorizzazione, fatti salvi gli usi consentiti dalla legge.',
           ],
         },
         {
@@ -89,7 +92,7 @@ function TerminiPage() {
         {
           title: '13. Contatti',
           paragraphs: [
-            'Società Duegi S.r.l. – Via Giulio Cesare 55, 80049 Somma Vesuviana (NA), Italia – P.IVA 02936711213 – Telefono / WhatsApp: +39 370 164 4530 – Email: info@ilpagnuozzo.com.',
+            'Società Duegi S.r.l. – Via Giulio Cesare 55, 80049 Somma Vesuviana (NA), Italia – P.IVA 02936711213 – WhatsApp +39 370 164 4530 – Email info@ilpagnuozzo.com.',
           ],
         },
       ]}

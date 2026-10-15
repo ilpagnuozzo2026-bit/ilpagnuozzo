@@ -7,8 +7,8 @@ function CookiePolicyPage() {
   return (
     <LegalPage
       title="Cookie Policy"
-      updated="7 ottobre 2026"
-      intro="La presente Cookie Policy descrive i cookie e le tecnologie simili utilizzati sul sito www.ilpagnuozzo.com, gestito da Società Duegi S.r.l., in conformità al GDPR, all’art. 122 del D.Lgs. 196/2003 e alle Linee guida del Garante per la protezione dei dati personali del 10 giugno 2021."
+      updated="15 ottobre 2026"
+      intro="Questa Cookie Policy riguarda il sito Il Pagnuozzo di Società Duegi S.r.l., anche sul dominio di pubblicazione ilpagnuozzo.lovable.app, ed è redatta in riferimento al GDPR, all’art. 122 del D.Lgs. 196/2003 e alle Linee guida del Garante del 10 giugno 2021. Distingue i cookie tecnici dalle connessioni ai servizi esterni, che possono comunicare dati tecnici anche senza installare cookie."
       sections={[
         {
           title: '1. Cosa sono i cookie',
@@ -20,6 +20,7 @@ function CookiePolicyPage() {
           title: '2. Cookie tecnici strettamente necessari',
           paragraphs: [
             'Il sito utilizza esclusivamente gli strumenti tecnici strettamente necessari alla sua erogazione e al suo corretto funzionamento. Per tali strumenti, ai sensi della normativa vigente, non è richiesto il consenso dell’utente.',
+            'Il codice dei moduli non imposta cookie e non salva le richieste in local storage o session storage. L’infrastruttura di pubblicazione può impostare cookie tecnici per la distribuzione del sito e la sicurezza. Sul dominio ilpagnuozzo.lovable.app, durante la verifica del 15 ottobre 2026, è stato rilevato il cookie __dpl, di sessione, associato alla distribuzione del sito; in alcune risposte è stato osservato anche __cf_bm, utilizzato da Cloudflare per la protezione automatizzata contro i bot, con durata limitata (normalmente 30 minuti). La loro presenza dipende dalla risposta dell’infrastruttura e può variare tra domini e sessioni.',
           ],
         },
         {
@@ -37,14 +38,16 @@ function CookiePolicyPage() {
         {
           title: '5. Cookie e servizi di terze parti',
           paragraphs: [
-            'Il sito carica i caratteri tipografici dal servizio Google Fonts (Google). Per fornire i caratteri, il browser dell’utente si collega ai server di Google, che ricevono l’indirizzo IP e i dati tecnici della richiesta. Questo servizio non installa cookie di profilazione da parte del sito.',
-            'Il sito non incorpora contenuti di terze parti come video, mappe o widget social. I link ai profili social (Instagram, Facebook, YouTube, TikTok, LinkedIn), a Google Maps e a WhatsApp portano a siti o applicazioni esterni, che applicano le proprie informative su privacy e cookie solo quando l’utente sceglie di visitarli.',
+            'I caratteri provengono da Google Fonts; immagini, copertine e video vengono caricati tramite servizi di distribuzione dei contenuti (CDN). Il browser comunica a questi fornitori indirizzo IP e dati tecnici della richiesta. Una connessione esterna non equivale di per sé all’installazione di un cookie, ma può comportare un trattamento di dati personali, descritto nella Privacy Policy.',
+            'La Home contiene tre video di partner B2B con un lettore video del sito e copertine caricate prima della riproduzione. I video non sono incorporati tramite YouTube o altri lettori social e sono riprodotti su scelta dell’utente. Non sono incorporate mappe o widget social.',
+            'I link a Instagram, Facebook, YouTube, TikTok, LinkedIn, Google Maps e WhatsApp aprono servizi esterni. Il modulo campioni apre WhatsApp tramite un link con il testo precompilato: all’apertura il testo viene comunicato a WhatsApp, mentre il messaggio al Titolare deve essere inviato dall’utente. Navigando su questi servizi si applicano le rispettive informative su privacy e cookie.',
           ],
         },
         {
           title: '6. Consenso',
           paragraphs: [
-            'Poiché il sito utilizza solo strumenti tecnici strettamente necessari, non viene mostrato un banner di consenso. Qualora in futuro venissero introdotti cookie analitici non anonimizzati, di marketing o altri strumenti non necessari, questi saranno attivati solo previo consenso, tramite un meccanismo che consentirà di accettarli, rifiutarli, gestire le preferenze e modificare o revocare la scelta in qualsiasi momento; la presente policy sarà aggiornata di conseguenza.',
+            'Nella configurazione verificata non sono presenti cookie analitici o di marketing, pixel pubblicitari o archiviazioni non necessarie: non è quindi previsto un banner per il consenso ai cookie. Questa conclusione riguarda la configurazione attuale, non esonera dal verificare le modifiche ai servizi tecnici e non costituisce un consenso al trattamento dei dati da parte dei servizi esterni.',
+            'Se saranno introdotti cookie o strumenti di tracciamento non necessari, saranno bloccati fino al consenso. L’utente dovrà poter accettare, rifiutare, scegliere per finalità e revocare o modificare la scelta con la stessa facilità con cui l’ha espressa. La policy e l’elenco dei cookie saranno aggiornati prima dell’attivazione.',
           ],
         },
         {
