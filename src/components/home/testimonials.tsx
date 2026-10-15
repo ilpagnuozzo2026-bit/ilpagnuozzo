@@ -103,18 +103,18 @@ export function Testimonials() {
             <li key={v.subtitle} className="flex">
               <figure className="flex h-full w-full flex-col text-center">
                 <VideoCard video={v} />
-                <figcaption className="mt-4 flex min-h-10 items-start justify-center text-sm font-semibold text-espresso">
+                <figcaption className="mt-6 flex min-h-10 items-start justify-center px-2 pb-2 text-sm font-semibold leading-snug text-espresso">
                   {v.subtitle}
                 </figcaption>
-                <blockquote className="mt-3 border-t border-espresso/10 pt-3 text-pretty text-base font-medium leading-snug text-espresso/90 md:text-lg">
+                <blockquote className="mt-2 border-t border-espresso/10 pt-4 text-pretty text-base font-medium italic leading-relaxed text-espresso/90 md:text-lg">
                   "{v.quote}"
                 </blockquote>
               </figure>
             </li>
           ))}
         </ul>
-        <p className="mt-8 flex items-center justify-center gap-2 font-bold text-espresso">
-          <Check className="size-5 text-brand" aria-hidden="true" />
+        <p className="mt-14 flex items-center justify-center gap-3 text-base font-bold text-espresso md:mt-20 md:text-lg">
+          <Check className="size-6 shrink-0 text-brand" aria-hidden="true" />
           {"Campione gratuito senza impegno d'acquisto"}
         </p>
       </div>
