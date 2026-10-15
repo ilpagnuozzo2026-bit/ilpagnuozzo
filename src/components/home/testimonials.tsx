@@ -106,7 +106,7 @@ export function Testimonials() {
                 <figcaption className="mt-4 flex min-h-10 items-start justify-center text-sm font-semibold text-espresso">
                   {v.subtitle}
                 </figcaption>
-                <blockquote className="mt-auto border-t border-espresso/10 pt-3 text-pretty text-base font-medium leading-snug text-espresso/90 md:text-lg">
+                <blockquote className="mt-3 border-t border-espresso/10 pt-3 text-pretty text-base font-medium leading-snug text-espresso/90 md:text-lg">
                   "{v.quote}"
                 </blockquote>
               </figure>
