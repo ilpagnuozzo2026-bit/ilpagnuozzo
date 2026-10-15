@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
-import { Check, Play, Quote } from 'lucide-react'
+import { Check, Play } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 import clip1 from '@/assets/video-partner-1.mp4.asset.json'
@@ -16,20 +16,20 @@ const videos = [
     src: clip1.url,
     poster: poster1.url,
     subtitle: 'Personale di Distribuzione Alimentare – Portici, Napoli',
-    quote: '\u00ab\u00c8 fresco e senza conservanti!\u00bb',
+    quote: 'È fresco e senza conservanti!',
   },
   {
     src: clip2.url,
     poster: poster2.url,
     subtitle: 'Personale di Caseificio e Panificio – Pomigliano, Napoli',
     quote:
-      '\u00abAbbiamo scelto l\u2019antica ricetta del Panuozzo Napoletano: un prodotto fresco, fatto con lievito madre e senza conservanti, per soddisfare tutti i nostri clienti.\u00bb',
+      "Abbiamo scelto l'antica ricetta del Panuozzo Napoletano: un prodotto fresco, fatto con lievito madre e senza conservanti, per soddisfare tutti i nostri clienti.",
   },
   {
     src: clip3.url,
     poster: poster3.url,
     subtitle: 'Titolare di Paninoteca – Napoli',
-    quote: '\u00abIl numero uno di tutti i panuozzi!\u00bb',
+    quote: 'Il numero uno di tutti i panuozzi!',
   },
 ]
 
@@ -102,16 +102,13 @@ export function Testimonials() {
           {videos.map((v) => (
             <li key={v.subtitle} className="flex">
               <figure className="flex h-full w-full flex-col text-center">
-                <div className="flex flex-1 flex-col items-center justify-start pb-5">
-                  <Quote className="size-6 shrink-0 text-gold md:size-7" aria-hidden="true" />
-                  <blockquote className="mt-2 text-balance font-serif text-lg font-medium italic leading-snug text-espresso md:text-xl">
-                    {v.quote}
-                  </blockquote>
-                </div>
                 <VideoCard video={v} />
-                <figcaption className="mt-3 flex min-h-10 items-start justify-center text-sm font-semibold text-espresso">
+                <figcaption className="mt-4 flex min-h-10 items-start justify-center text-sm font-semibold text-espresso">
                   {v.subtitle}
                 </figcaption>
+                <blockquote className="mt-auto border-t border-espresso/10 pt-3 text-pretty text-base font-medium leading-snug text-espresso/90 md:text-lg">
+                  "{v.quote}"
+                </blockquote>
               </figure>
             </li>
           ))}
