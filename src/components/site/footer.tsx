@@ -156,7 +156,20 @@ export function Footer() {
 
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>{'© 2026 Il Pagnuozzo – Tutti i diritti riservati'}</p>
+          <div className="flex flex-col gap-1.5">
+            <p>{'© 2026 Il Pagnuozzo – Tutti i diritti riservati'}</p>
+            <p className="flex flex-wrap gap-x-2 leading-relaxed">
+              <span>{`P.IVA ${company.vat}`}</span>
+              <span aria-hidden="true">·</span>
+              <span>{`C.F. ${company.cf}`}</span>
+              <span aria-hidden="true">·</span>
+              <span>{`REA ${company.rea}`}</span>
+              <span aria-hidden="true">·</span>
+              <span>{`PEC ${company.pec}`}</span>
+              <span aria-hidden="true">·</span>
+              <span>{`Cap. Soc. ${company.capitale}`}</span>
+            </p>
+          </div>
           <nav aria-label="Link legali" className="flex flex-wrap gap-x-2">
             {legalLinks.map((link, i) => (
               <span key={link.href} className="flex gap-x-2">

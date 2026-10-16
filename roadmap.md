@@ -12,3 +12,7 @@
 - [x] Correct all three legal documents without changing other sections.
 - [x] Add mandatory corporate info (art. 2250 c.c.) to legal pages: REA/PEC/capitale sociale as user-approved placeholders; user fills real values before go-live.
 - [x] Verify legal pages and sample-request flow; report business details requiring confirmation.
+
+# Corporate data placeholders
+- [x] Keep [Inserire ...] placeholders for CF/REA/PEC/capitale in legal pages and footer (single source: src/lib/company.ts) until real data is supplied.
+- [ ] Replace placeholders with real CF, REA, PEC and capitale sociale in src/lib/company.ts before go-live — waiting on the user to provide the values.
