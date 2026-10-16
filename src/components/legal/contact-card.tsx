@@ -21,6 +21,13 @@ export function ContactCard() {
       ),
     },
     { label: 'P.IVA', value: company.vat },
+    { label: 'Codice Fiscale', value: '[Inserire Codice Fiscale, se diverso dalla P.IVA]' },
+    { label: 'Numero REA', value: '[Inserire numero REA, es. NA-XXXXXX]' },
+    { label: 'PEC', value: '[Inserire indirizzo PEC, es. societaduegi@pec.it]' },
+    {
+      label: 'Capitale sociale',
+      value: '[Inserire capitale sociale versato, es. € 10.000 i.v. — indicare se S.r.l. a socio unico]',
+    },
     {
       label: 'WhatsApp',
       value: (
