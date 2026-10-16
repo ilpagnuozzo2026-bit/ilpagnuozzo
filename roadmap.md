@@ -8,6 +8,7 @@
 - [x] Verify the section in the browser on desktop and mobile.
 
 # Legal audit
-- [ ] Audit site data collection, third-party services, and Italian legal requirements.
-- [ ] Correct all three legal documents without changing other sections.
-- [ ] Verify legal pages and sample-request flow; report business details requiring confirmation.
+- [x] Audit site data collection, third-party services, and Italian legal requirements.
+- [x] Correct all three legal documents without changing other sections.
+- [x] Add mandatory corporate info (art. 2250 c.c.) to legal pages: REA/PEC/capitale sociale as user-approved placeholders; user fills real values before go-live.
+- [x] Verify legal pages and sample-request flow; report business details requiring confirmation.
